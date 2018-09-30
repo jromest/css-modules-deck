@@ -6,11 +6,13 @@
     "start": "mdx-deck css-modules-deck.mdx",
     "build": "npm run clean && npm run static && mdx-deck build css-modules-deck.mdx",
     "clean": "rm -rf dist/images/",
-    "static": "cp -R images/ dist/images/"
+    "static": "cp -R images/ dist/images/",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "author": "Jerome Estiller <jromestiller@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^2.0.0",
     "react-syntax-highlighter": "^8.0.1"
   },
   "devDependencies": {
