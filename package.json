@@ -1,0 +1,19 @@
+{
+  "name": "css-modules-deck",
+  "version": "1.0.0",
+  "description": "Presentation slides about CSS Modules for freeCodeCamp Manila",
+  "scripts": {
+    "start": "mdx-deck css-modules-deck.mdx",
+    "build": "npm run clean && npm run static && mdx-deck build css-modules-deck.mdx",
+    "clean": "rm -rf dist/images/",
+    "static": "cp -R images/ dist/images/"
+  },
+  "author": "Jerome Estiller <jromestiller@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react-syntax-highlighter": "^8.0.1"
+  },
+  "devDependencies": {
+    "mdx-deck": "^1.7.7"
+  }
+}
